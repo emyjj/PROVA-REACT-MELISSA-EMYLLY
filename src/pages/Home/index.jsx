@@ -1,5 +1,5 @@
 import { useState, useContext } from 'react';
-import { Container } from './styless.jsx';
+import { Container, Title, Input, Button } from './styless.jsx';
 import { UserContext } from '../../context/UserContext.jsx';
 import { useNavigate } from 'react-router-dom';
 import Header from '../../components/Header';
@@ -15,11 +15,13 @@ function Home() {
 
   return (
     <Container>
-      <Header title="Formulário de Cadastro" />
-      <input type='text' onChange={onChangeName} value={user.name}/>
+      <div>
+        <Title>FORMULÁRIO DE CADASTRO</Title>
+      </div>
+      <Input type='text' onChange={onChangeName} value={user.name} placeholder='Digite seu nome' />
       
       {/* <h3>{user.name}</h3> */}
-      <button onClick={() => navigate ('/personal') }>Continuar</button>
+      <Button onClick={() => navigate ('/personal') }>Continuar</Button>
     </Container>
   );
 

@@ -1,8 +1,14 @@
 import styled from 'styled-components'
 
-export const Container = styled.main`
+export const Container = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #b0b0b0, #444242);
   display: flex;
-  flex-direction: column;
-  gap: 16px;
-  padding: 24px;
+  flex-direction: row;
+
+  gap: 20px;
 `
