@@ -9,12 +9,16 @@ export default function Personal() {
 const { user } = useContext(UserContext)
 
     return (
+    <div>
+        <Header title='Dados Pessoais'></Header>
+
     <Container>
-        <Header title="Dados pessoais" />
+
         {/*c */}
         <FormPersonal></FormPersonal>
         <DataUser></DataUser>
         
     </Container>
+    </div>
     )
 }

@@ -37,14 +37,11 @@ function Formulario() {
     return(
         <div className="container-formulario">
             <form className="container-form" onSubmit={salvarFormulario}>
-            <label>CPF</label>
-            <input type="text" placeholder='cpf' value={user.cpf}  onChange={(onChangeCpf)} ></input>
+            <input type="text" placeholder='CPF' value={user.cpf}  onChange={(onChangeCpf)} ></input>
 
-            <label>Data Nascimento</label>
-            <input type='date' value={user.dataNascimento}  onChange={(onChangeDataNascimento)} ></input>
+            <input type='date' placeholder='Data de Nascimento' value={user.dataNascimento}  onChange={(onChangeDataNascimento)} ></input>
 
-            <label>Telefone</label>
-            <input type="text" placeholder='telefone' value={user.telefone}  onChange={(onChangeTelefone)} ></input>
+            <input type="text" placeholder='Telefone' value={user.telefone}  onChange={(onChangeTelefone)} ></input>
             
             <button onClick={() => navigate ('/address') }>Continuar</button>
         </form>

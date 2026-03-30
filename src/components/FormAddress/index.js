@@ -38,34 +38,34 @@ function Formulario() {
     return (
         <div className="container-formulario">
             <form className="container-form" onSubmit={salvarFormulario}>
-                <label>Rua</label>
+
                 <input 
                     type="text" 
-                    placeholder='rua' 
+                    placeholder='Rua' 
                     value={user.rua} 
                     onChange={(onChangeRua)} 
                 />
 
-                <label>Número</label>
+
                 <input 
                     type='text' 
-                    placeholder='numero' 
+                    placeholder='Número' 
                     value={user.numero} 
                     onChange={(onChangeNumero)} 
                 />
 
-                <label>Cep</label>
+
                 <input 
                     type='text' 
-                    placeholder='cep' 
+                    placeholder='Cep' 
                     value={user.cep} 
                     onChange={(onChangeCep)} 
                 />
 
-                <label>Estado</label>
+ 
                 <input 
                     type='text' 
-                    placeholder='estado' 
+                    placeholder='Estado' 
                     value={user.estado} 
                     onChange={(onChangeEstado)} 
                 />

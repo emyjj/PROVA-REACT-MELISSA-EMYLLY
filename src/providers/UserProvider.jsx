@@ -10,7 +10,7 @@ export default function UserProvider({ children }) {
         rua: '',
         numero: '',
         cep: '',
-        estado: ' '
+        estado: ''
     });
 
     return (

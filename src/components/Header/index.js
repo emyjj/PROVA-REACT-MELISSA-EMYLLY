@@ -1,3 +1,5 @@
+
+
 import './styless.css'
 import { useState, useContext } from 'react'
 import { UserContext } from '../../context/UserContext';
@@ -10,8 +12,9 @@ export default function Header({ title }) {
   }
   return (
     <header className="page-header">
+
       <h1>{title}</h1>
-      <h1>{user.name}</h1>
+      <h1 className='nome'>{user.name}</h1>
     </header>
   )
 }
