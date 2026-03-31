@@ -1,4 +1,4 @@
-import { useState } from 'react'; // Removido o 'use' que causava erro
+import { useState } from 'react';
 import './styless.css';
 import { useNavigate } from 'react-router-dom';
 import BackButton from '../BackButton';
@@ -77,10 +77,6 @@ function Formulario() {
 
             <div className="voltar">
                 <BackButton />
-            </div>
-
-            <div>
-                <DataUser></DataUser>
             </div>
         </div>
     );
